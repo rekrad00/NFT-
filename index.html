@@ -1,33 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      body {
+        background: rgb(6, 6, 51);
+        font-family: sans-serif;
+        padding: 200px;
+        margin: auto;
+      }
+      .note {
+        color: aliceblue;
+        padding-left: 1.5rem;
+      }
+      .expo-1 {
+        padding-left: 1.5rem;
+        color: rgb(190, 190, 190);
+      }
+      .expo-2 {
+        color: aqua;
+        padding-left: 1.5rem;
+      }
+      .days {
+        color: rgb(190, 190, 190);
+        padding-left: 4rem;
+      }
+      .equilibrium {
+        background-color: rgb(34, 34, 99);
+        width: 300px;
+        height: 500px;
+        margin: auto;
+        padding: auto;
+        display: block;
+        border-radius: 10px;
+      }
+      img {
+        align-items: center;
+        padding: auto;
+        margin-top: 2rem;
+        border-radius: 10px;
+      }
+      .clock {
+        padding-bottom: 0.001rem;
+      }
+      .name {
+        color: aliceblue;
+      }
+      .creation {
+        padding-left: 1.5rem;
+      }
+      .line-v{
+        padding-bottom: 0.0002rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    </style>
+    <div>
+      <div class="equilibrium">
+        <main>
+          <center>
+            <img
+              src="images/image-equilibrium.jpg"
+              width="250px"
+              height="250px"
+              object-fit="cover"
+              border-radius="10px"
+            />
+          </center>
+          <section>
+            <h3 class="note">Equilibrium #3429</h3>
+          </section>
+          <section>
+            <p class="expo-1">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <p class="expo-2">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                  fill="#00FFF8"
+                />
+              </svg>
+              0.041 ETH
+              <span class="days"
+                ><svg
+                  width="17"
+                  height="17"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="clock"
+                >
+                  <path
+                    d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                    fill="#8BACD9"
+                  />
+                </svg>
+                3 days left
+              </span>
+            </p>
+          </section>
+        </main>
+        <hr class="line-v"></hr>
+        <p class="creation">
+          <img src="images/image-avatar.png" width="20px" />
+          <span>Creation of <a class="name">Jules Wyvern</a></span>
+        </p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
