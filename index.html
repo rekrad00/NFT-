@@ -11,71 +11,9 @@
     />
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+<link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <style>
-      body {
-        background: rgb(6, 6, 51);
-        font-family: sans-serif;
-        padding: 200px;
-        margin: auto;
-      }
-      .note {
-        color: aliceblue;
-        padding-left: 1.5rem;
-      }
-      .expo-1 {
-        padding-left: 1.5rem;
-        color: rgb(190, 190, 190);
-      }
-      .expo-2 {
-        color: aqua;
-        padding-left: 1.5rem;
-      }
-      .days {
-        color: rgb(190, 190, 190);
-        padding-left: 4rem;
-      }
-      .equilibrium {
-        background-color: rgb(34, 34, 99);
-        width: 300px;
-        height: 500px;
-        margin: auto;
-        padding: auto;
-        display: block;
-        border-radius: 10px;
-      }
-      img {
-        align-items: center;
-        padding: auto;
-        margin-top: 2rem;
-        border-radius: 10px;
-      }
-      .clock {
-        padding-bottom: 0.001rem;
-      }
-      .name {
-        color: aliceblue;
-      }
-      .creation {
-        padding-left: 1.5rem;
-      }
-      .line-v{
-        padding-bottom: 0.0002rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-    </style>
     <div>
       <div class="equilibrium">
         <main>
@@ -118,13 +56,13 @@
                 3 days left
               </span>
             </p>
+            <hr class="line-v"></hr>
+            <p class="creation">
+              <img src="images/image-avatar.png" width="20px" />
+              <span>Creation of <a class="name">Jules Wyvern</a></span>
+            </p>
           </section>
         </main>
-        <hr class="line-v"></hr>
-        <p class="creation">
-          <img src="images/image-avatar.png" width="20px" />
-          <span>Creation of <a class="name">Jules Wyvern</a></span>
-        </p>
       </div>
     </div>
     <div class="attribution">
